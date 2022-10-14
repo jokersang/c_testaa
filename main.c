@@ -317,7 +317,4 @@ int main()
     return 0;
 }
 
-int add() {
-    printf("a");
-}
 
