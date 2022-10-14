@@ -296,19 +296,17 @@ void withInpute()   //与用户输入有关
     }
 }
 
-int main()
-{
+int main() {
     system("mode con cols=100 lines=30");  //设置控制台的宽高
     welcometogame();
     startup();   // 数据初始化
     //explation();
-    while(1)   // 游戏循环执行
+    while (1)   // 游戏循环执行
     {
-        gotoxy(0,0);
+        gotoxy(0, 0);
         show();   // 显示画面
         scoreandtips();
-        if(flag == 1)
-        {
+        if (flag == 1) {
             endgame();
         }
         withoutInpute(); // 与用户输入无关的更新
@@ -316,6 +314,4 @@ int main()
     }
     return 0;
 }
-
-
 
